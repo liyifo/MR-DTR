@@ -20,7 +20,7 @@ conda env create -f environment.yml
 
 ## Prepare the datasets
 
-We used two datasets, MIMIC-III v1.4 and MIMIC-IV v1.0, for our experiments.
+We used two datasets, [MIMIC-III](https://mimic.mit.edu/docs/iii/) v1.4 and [MIMIC-IV](https://mimic.mit.edu/docs/iv/) v1.0, for our experiments.
 
 The files required is the same as [SafeDrug](https://github.com/ycq091044/SafeDrug/), and the SMILES file needs to be processed as provided in SafeDrug using DrugBank.
 
