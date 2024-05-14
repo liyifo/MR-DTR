@@ -1,0 +1,58 @@
+# MR-DTR
+
+Multi-patient Co-guided Medication Recommendation by Mining Dynamic Treatment Regimes
+
+
+## Environment
+```
+python==3.9.18
+torch==2.1.1
+tqdm==4.66.1
+dgl==1.1.2.cu118
+scikit-learn==1.3.2
+```
+You can build the conda environment for our experiment using the following command:
+```
+conda env create -f environment.yml
+```
+
+
+
+## Prepare the datasets
+
+We used two datasets, MIMIC-III v1.4 and MIMIC-IV v1.0, for our experiments.
+
+The files required is the same as [SafeDrug](https://github.com/ycq091044/SafeDrug/), and the SMILES file needs to be processed as provided in SafeDrug using DrugBank.
+
+If the above conditions are ready, run the following commands in sequence to preprocess:
+
+```python
+# preprocess the dataset(mimic-iii)
+cd data
+python preprocess.py
+# preprocess the dataset(mimic-iv)
+python preprocess_4.py
+
+# preprocess the co-guided temporal graph
+cd ..
+python preprocess.py
+
+```
+
+
+
+## Train or Test
+
+
+You can train or test the model using the following command:
+```
+# mimic-iii
+python main.py
+python main.py --Test
+# mimic-iv
+python main_4.py
+python main_4.py --Test
+```
+
+## Acknowledgement
+None
