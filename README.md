@@ -4,7 +4,7 @@ Multi-patient Co-guided Medication Recommendation by Mining Dynamic Treatment Re
 
 
 ## Environment
-```
+```python
 python==3.9.18
 torch==2.1.1
 tqdm==4.66.1
@@ -29,9 +29,9 @@ If the above conditions are ready, run the following commands in sequence to pre
 ```python
 # preprocess the dataset(mimic-iii)
 cd data
-python preprocess.py
+python preprocess_mimic-iii.py
 # preprocess the dataset(mimic-iv)
-python preprocess_4.py
+python preprocess_mimic-iv.py
 
 # preprocess the co-guided temporal graph
 cd ..
@@ -45,13 +45,13 @@ python preprocess.py
 
 
 You can train or test the model using the following command:
-```
+```python
 # mimic-iii
-python main.py
-python main.py --Test
+python main_mimic-iii.py
+python main_mimic-iii.py --Test
 # mimic-iv
-python main_4.py
-python main_4.py --Test
+python main_mimic-iv.py
+python main_mimic-iv.py --Test
 ```
 
 ## Acknowledgement
