@@ -35,7 +35,7 @@ python preprocess_mimic-iv.py
 
 # preprocess the co-guided temporal graph
 cd ..
-python preprocess.py
+python preprocess_graph.py
 
 ```
 
