@@ -1,6 +1,6 @@
 # MR-DTR
 
-Multi-patient Co-guided Medication Recommendation by Mining Dynamic Treatment Regimes
+Time-aware Medication Recommendation via Intervention of Dynamic Treatment Regimes
 
 
 ## Environment
