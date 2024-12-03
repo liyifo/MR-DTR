@@ -54,5 +54,4 @@ python main_mimic-iv.py
 python main_mimic-iv.py --Test
 ```
 
-## Acknowledgement
-None
+
